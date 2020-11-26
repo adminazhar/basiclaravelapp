@@ -15,10 +15,8 @@ class HomeController extends Controller
     }
 
     public function services(){
-        $services = [
-            'Services 1',
-             'Services 2',
-             'Services 3'];
+
+        $services = \App\Models\Service::all();
 
         return view('services', compact('services'));
     }

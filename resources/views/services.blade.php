@@ -7,7 +7,7 @@
 
     <ul>
         @forelse($services as $service)
-            <li>{{ $service }}</li>
+            <li>{{ $service->name }}</li>
         @empty
             No services found.
         @endforelse
