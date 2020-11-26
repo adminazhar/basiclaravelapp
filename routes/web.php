@@ -15,4 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', '\App\Http\Controllers\HomeController@index');
 Route::get('/about', '\App\Http\Controllers\HomeController@about');
-Route::get('/services', '\App\Http\Controllers\HomeController@services');
+
+
+Route::get('/service', '\App\Http\Controllers\ServiceController@index');
+Route::post('/service', '\App\Http\Controllers\ServiceController@store');

@@ -14,10 +14,5 @@ class HomeController extends Controller
         return view('about');
     }
 
-    public function services(){
 
-        $services = \App\Models\Service::all();
-
-        return view('services', compact('services'));
-    }
 }

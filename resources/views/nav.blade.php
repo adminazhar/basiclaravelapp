@@ -1,2 +1,2 @@
 <a href="/about">About</a><br>
-<a href="/services">Services</a>
+<a href="/service">Services</a>
