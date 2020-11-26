@@ -19,3 +19,10 @@ Route::get('/about', '\App\Http\Controllers\HomeController@about');
 
 Route::get('/service', '\App\Http\Controllers\ServiceController@index');
 Route::post('/service', '\App\Http\Controllers\ServiceController@store');
+
+Route::get('/customers', '\App\Http\Controllers\CustomerController@index');
+
+
+Route::get('/customers/create', '\App\Http\Controllers\CustomerController@create');
+Route::post('/customers', '\App\Http\Controllers\CustomerController@store');
+Route::get('/customers/{customerId}', '\App\Http\Controllers\CustomerController@show');
