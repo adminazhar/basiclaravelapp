@@ -36,4 +36,8 @@ class CustomerController extends Controller
 
         return view('customer.show', compact('customer'));
     }
+
+    public function edit($customerId){
+
+    }
 }
