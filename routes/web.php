@@ -37,3 +37,6 @@ Route::get('/customers/{customerId}', '\App\Http\Controllers\CustomerController@
 Route::get('/customers/{customer}/edit','\App\Http\Controllers\CustomerController@edit');
 //UPDATE INTO THE SQL
 Route::patch('/customers/{customer}', '\App\Http\Controllers\CustomerController@update');
+
+//DELETE CUSTOMER
+Route::delete('/customers/{customer}', '\App\Http\Controllers\CustomerController@destroy');

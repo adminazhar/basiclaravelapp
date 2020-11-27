@@ -22,7 +22,6 @@
     <list default="true" id="b135b7e2-b174-4ebd-a8b8-f77ffdd286aa" name="Default Changelist" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/customer/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -184,7 +183,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606316260664</updated>
       <workItem from="1606316261783" duration="1011000" />
-      <workItem from="1606485798589" duration="1738000" />
+      <workItem from="1606485798589" duration="2387000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1606367499188</created>
@@ -221,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606485832014</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated routes and added edit functionality for customer">
+      <created>1606488140012</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606488140012</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +252,8 @@
     <MESSAGE value="added insert method for Service Model" />
     <MESSAGE value="added customer Model/Controller" />
     <MESSAGE value="updated customer controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated customer controller" />
+    <MESSAGE value="updated routes and added edit functionality for customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated routes and added edit functionality for customer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="302" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606368359783">
@@ -269,10 +276,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1865" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606485682815" />
-    <state x="452" y="187" key="Vcs.Push.Dialog.v2" timestamp="1606485847241">
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2" timestamp="1606488146688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606485847241" />
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606488146688" />
     <state x="532" y="237" width="840" height="1034" key="run.anything.popup" timestamp="1606395310775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

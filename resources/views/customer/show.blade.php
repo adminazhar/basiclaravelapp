@@ -7,3 +7,11 @@ Customer Email: {{$customer->email}}
 <div>
     <a href="/customers/{{$customer->id}}/edit">Edit Customer</a>
 </div>
+
+<div>
+    <form action="/customers/{{$customer->id}}" method="post">
+        @method('DELETE')
+        @csrf
+        <button>Delete</button>
+    </form>
+</div>
