@@ -18,14 +18,10 @@ class CustomerController extends Controller
     }
 
     public function store(){
-        $data = \request()->validate([
-            'name' => 'required|min:3|max:20',
-            'email' => 'required|email'
-        ]);
 
-        \App\Models\Customer::create($data);
+        $customer = \App\Models\Customer::create($this->validateData());
 
-        return redirect('/customers');
+        return redirect('/customers/' . $customer->id);
     }
 
     public function show($customerId){
@@ -42,12 +38,8 @@ class CustomerController extends Controller
     }
 
     public function update(\App\Models\Customer $customer){
-        $data = \request()->validate([
-            'name' => 'required',
-            'email' => 'required|email'
-        ]);
 
-        $customer->update($data);
+        $customer->update($this->validateData());
 
         return redirect('/customers');
     }
@@ -56,6 +48,12 @@ class CustomerController extends Controller
         $customer->delete();
 
         return redirect('/customers');
+    }
 
+    protected function validateData(){
+        return \request()->validate([
+            'name' => 'required|min:3|max:20',
+            'email' => 'required|email'
+        ]);
     }
 }
