@@ -3,3 +3,7 @@
 Customer Name: {{$customer->name}}
 <br>
 Customer Email: {{$customer->email}}
+
+<div>
+    <a href="/customers/{{$customer->id}}/edit">Edit Customer</a>
+</div>
