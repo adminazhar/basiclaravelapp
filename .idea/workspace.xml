@@ -22,6 +22,8 @@
     <list default="true" id="b135b7e2-b174-4ebd-a8b8-f77ffdd286aa" name="Default Changelist" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_085401_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_26_085401_create_customers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_090737_add_email_to_customers.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +161,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -182,7 +184,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606316260664</updated>
       <workItem from="1606316261783" duration="1011000" />
-      <workItem from="1606485798589" duration="3066000" />
+      <workItem from="1606485798589" duration="8641000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1606367499188</created>
@@ -233,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606488775458</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor CustomerController.php">
+      <created>1606489489691</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606489489691</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +269,8 @@
     <MESSAGE value="updated customer controller" />
     <MESSAGE value="updated routes and added edit functionality for customer" />
     <MESSAGE value="added delete customer route" />
-    <option name="LAST_COMMIT_MESSAGE" value="added delete customer route" />
+    <MESSAGE value="refactor CustomerController.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor CustomerController.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="302" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606368359783">
@@ -283,18 +293,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1865" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606485682815" />
-    <state x="351" y="78" key="SettingsEditor" timestamp="1606489176061">
+    <state x="351" y="78" key="SettingsEditor" timestamp="1606545452667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="351" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606489176061" />
-    <state x="452" y="187" key="Vcs.Push.Dialog.v2" timestamp="1606488780236">
+    <state x="351" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606545452667" />
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2" timestamp="1606489492507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606488780236" />
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606489492507" />
     <state x="532" y="237" width="840" height="1034" key="run.anything.popup" timestamp="1606395310775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" width="840" height="1034" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606395310775" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606547008086">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606547008086" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

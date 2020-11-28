@@ -8,7 +8,7 @@ class CustomerController extends Controller
 {
     public function index()
     {
-        $customers = \App\Models\Customer::all();
+        $customers = \App\Models\Customer::where('active',1)->get();
 
         return view('customer.index', compact('customers'));
     }
