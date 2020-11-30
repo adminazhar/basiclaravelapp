@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $customers = \App\Models\Customer::where('active',1)->get();
+        $customers = \App\Models\Customer::where('active', $request->query('active'))->get();
 
         return view('customer.index', compact('customers'));
     }
